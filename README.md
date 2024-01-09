@@ -1,1 +1,13 @@
-# pec3html
+# Estructura
+
+
+## Sobre el html
+
+
+
+
+## Sobre el css
+
+
+
+
