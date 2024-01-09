@@ -6,6 +6,9 @@ html {
   color: rgb(0, 59, 74);
   font-size: 1rem; /* Cambiado a rem */
 }
+strong {
+  font-weight: bold;
+}
 body {
   margin: 0;
 }
@@ -46,7 +49,7 @@ header {
   padding-right: 3vw;
   font-size: 1rem;
 }
-.cab {
+.nav {
   height: 5rem;
   position: sticky;
   display: grid;
@@ -56,22 +59,22 @@ header {
 .logo {
   height: 2.5rem;
 }
-.lis {
-  display: inline;
-  padding-right: 0.5rem;
-}
-.lis2 {
-  display: inline;
-  padding-left: 0.5rem;
-  border-left: 1px solid;
-}
-.hlin {
+.anav {
   color: rgb(0, 59, 74);
   text-decoration: none;
   font-weight: 900;
 }
-.hlin:hover {
+.anav:hover {
   color: rgb(191, 12, 240);
+}
+.l1 {
+  display: inline;
+  padding-right: 0.5rem;
+}
+.l2 {
+  display: inline;
+  padding-left: 0.5rem;
+  border-left: 1px solid;
 }
 
 /* //////////////////// */
@@ -149,32 +152,74 @@ footer {
 /* //////////////////// */
 /* 				 BODY   */
 /* //////////////////// */
-
+main {
+  font-size: 1.2rem;
+}
 @media (max-width: 992px) {
   main {
     font-size: 1rem;
   }
 }
-@media (min-width: 992px) {
-  main {
-    font-size: 1.2rem;
-  }
-}
+ 
+
 
 /* //////////////////// */
 /* 			 INDEX.HTML */
 /* //////////////////// */
 
+
+/* General */
+.cabecera{
+  background-image: url("../img/hero-image-home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text1{
+  line-height: 2rem;
+}
+.paddingbot {
+  padding-bottom: 3vw;
+}
+.speHead {
+  background-color: rgb(247, 247, 247);
+}
+h1.titulo {
+  font-weight: 900;
+}
+.sus {
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(0, 59, 74);
+  padding: 0.5rem 1rem;
+}
+.sus:hover {
+  background-color: rgb(191, 12, 240);
+}
+.input {
+  width: 95%;
+  padding: 0.5vw;
+  margin-top: -1vw;
+  border-radius: 7px;
+  border: solid 2px;
+  border-color: rgb(229, 225, 254);
+}
+.input::placeholder {
+  font-size: 1rem;
+}
+.apartados {
+  background-color: rgb(229, 225, 254);
+}
+legend {
+  font-size: 40%;
+  text-align: right;
+}
+
+/* PC */
+
 @media (min-width: 1200px) {
-  .titulo {
-    background-image: url("../img/hero-image-home.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-left: 15vw;
-    padding-right: 40vw;
-    padding-top: 10vw;
-    padding-bottom: 10vw;
+  .cabecera{
+    padding: 6rem 25rem 6rem 9.5rem;
   }
   .apartados {
     padding-right: 15vw;
@@ -183,86 +228,20 @@ footer {
     padding-bottom: 4vw;
   }
   .formulario {
-    padding-top: 3vw;
-    padding-bottom: 3vw;
-    padding-left: 15vw;
-    padding-right: 15vw;
+    padding: 3rem 15rem;
   }
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5vw;
   }
-  h1.FW900 {
+  h1.titulo {
     font-size: 4.5rem;
   }
-  .campo {
+  .input {
     font-size: 1.5rem;
   }
-  .legal {
-    font-size: 1rem;
-  }
-  .sus {
-    font-size: 1.2rem;
-  }
-  .leftimage {
-    transform: rotate(-5deg);
-    text-align: right;
-  }
-  .rightimage {
-    transform: rotate(5deg);
-    text-align: right;
-  }
-  .gridleft {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 2rem;
-    align-items: center;
-    padding-bottom: 2rem;
-  }
-
-  .gridright {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 2rem;
-    align-items: center;
-    padding-bottom: 2rem;
-  }
-  .imapar {
-    width: 100%;
-  }
-}
-@media (max-width: 1200px) and (min-width: 992px) {
-  .apartados {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    padding-top: 3.75rem;
-    padding-bottom: 1.875rem;
-  }
-
-  .formulario {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  .titulo {
-    background-image: url("../img/hero-image-home.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 6.25rem;
-    padding-bottom: 6.25rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-  h1.FW900 {
-    font-size: 4.5rem;
-  }
-  .campo {
-    font-size: 1.5rem;
-  }
-  .legal {
+  .info {
     font-size: 1rem;
   }
   .sus {
@@ -294,36 +273,82 @@ footer {
     width: 100%;
   }
 }
-@media (max-width: 992px) {
+
+/* Tablet */
+
+@media (max-width: 1200px) {
   .apartados {
-    padding-left: 2vw;
-    padding-right: 2vw;
-    padding-top: 6vw;
-    padding-bottom: 3vw;
+    padding: 3.75rem 1.25rem 1.875rem;
   }
   .formulario {
-    padding-top: 3vw;
+    padding: 2rem 1rem;
+  }
+
+  .cabecera {
+    padding: 10rem 1.25rem;
+  }
+  h1.titulo {
+    font-size: 4.5rem;
+  }
+  .input {
+    font-size: 1.5rem;
+  }
+  .info {
+    font-size: 1rem;
+  }
+  .sus {
+    font-size: 1.2rem;
+  }
+  .leftimage {
+    transform: rotate(-5deg);
+    text-align: right;
+  }
+  .rightimage {
+    transform: rotate(5deg);
+    text-align: right;
+  }
+  .gridleft {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 3vw;
+    align-items: center;
     padding-bottom: 3vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
   }
-  .titulo {
-    background-image: url("../img/hero-image-home.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
+  .gridright {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 3vw;
+    align-items: center;
+    padding-bottom: 3vw;
   }
-  h1.FW900 {
+  .imapar {
+    width: 100%;
+  }
+}
+
+/* Phone */
+
+@media (max-width: 500px) {
+  .apartados {
+    padding: 3.75rem 1.25rem 1.875rem;
+  }
+  .formulario {
+    padding: 2rem 1rem;
+  }
+  .text1{
+    line-height: 1rem;
+  }
+  .cabecera {
+    background-position: center bottom;
+    padding: 6.25rem 0.125rem;
+  }
+  h1.titulo {
     font-size: 2rem;
   }
   .campo {
     font-size: 1rem;
   }
-  .legal {
+  .info {
     font-size: 0.8rem;
   }
   .sus {
@@ -352,10 +377,14 @@ footer {
   .leftimage {
     text-align: right;
     order: 1;
+    transform: rotate(0);
+
   }
   .rightimage {
     text-align: right;
     order: 1;
+    transform: rotate(0);
+
   }
   .lefttext {
     order: 2;
@@ -367,43 +396,8 @@ footer {
     width: 100%;
   }
 }
-.paddingbot {
-  padding-bottom: 3vw;
-}
-.speHead {
-  background-color: rgb(247, 247, 247);
-}
-h1.FW900 {
-  font-weight: 900;
-}
-.sus {
-  color: rgb(255, 255, 255);
-  border-radius: 5px;
-  border: none;
-  background-color: rgb(0, 59, 74);
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-.sus:hover {
-  background-color: rgb(191, 12, 240);
-}
-.campo {
-  width: 95%;
-  padding: 0.5vw;
-  margin-top: -1vw;
-  border-radius: 7px;
-  border: solid 2px;
-  border-color: rgb(229, 225, 254);
-}
-.apartados {
-  background-color: rgb(229, 225, 254);
-}
-legend {
-  font-size: 40%;
-  text-align: right;
-}
+
+
 /* //////////////////// */
 /* 	VIDEO & BLOG	    */
 /* //////////////////// */
@@ -489,8 +483,8 @@ legend {
     grid-template-columns: 1fr;
     justify-content: left;
     height: auto;
-    grid-gap: 4vw;
-    margin-bottom: 2vw;
+    grid-gap: 2.5rem;
+    margin-bottom: 1.25rem;
   }
   .eti1 {
     font-size: 90%;
@@ -524,7 +518,7 @@ legend {
   left: 1%;
   background-color: rgb(0, 59, 74);
   color: rgb(255, 255, 255);
-  padding: 0.5vw;
+  padding: 0.3125rem;
 }
 .eti2 {
   position: absolute;
@@ -532,18 +526,13 @@ legend {
   bottom: 4%;
   right: 2%;
   background-color: rgba(247, 247, 247, 0.7);
-  padding-left: 0.5vw;
-  padding-right: 0.5vw;
-  padding-top: 0.3vw;
-  padding-bottom: 0.3vw;
+  padding: 0.1875rem 0.3125rem;
   font-weight: 700;
 }
 .blogleg {
   box-sizing: border-box;
   width: 100%;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-bottom: 2vw;
+  padding: 0 1.25rem 1.25rem;
 }
 .imaleg {
   color: rgb(158, 157, 171);
@@ -600,10 +589,7 @@ a.speT:hover {
 /* Codigo para la parte entrada.html  ############################################################################*/
 @media (min-width: 1200px) {
   .entfor {
-    padding-top: 1vw;
-    padding-bottom: 7vw;
-    padding-left: 15vw;
-    padding-right: 15vw;
+    padding: 0.625rem 9.375rem 4.375rem;
   }
   .cueent {
     display: grid;
@@ -631,10 +617,7 @@ a.speT:hover {
 }
 @media (max-width: 1200px) and (min-width: 992px) {
   .entfor {
-    padding-top: 1vw;
-    padding-bottom: 7vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding: 0.625rem 1.25rem 4.375rem;
   }
   .cueent {
     display: grid;
@@ -664,10 +647,7 @@ a.speT:hover {
 }
 @media (max-width: 992px) {
   .entfor {
-    padding-top: 1vw;
-    padding-bottom: 7vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding: 0.625rem 1.25rem 4.375rem 1.25rem;
   }
   .cueent {
     display: grid;
@@ -718,9 +698,7 @@ a.speT:hover {
   background-color: rgb(255, 255, 255);
 }
 .leg2 {
-  padding-left: 0.5vw;
-  padding-right: 0.5vw;
-  padding-bottom: 0.5vw;
+  padding: 0 0.5rem 0.5rem;
 }
 .imag {
   color: rgb(158, 157, 171);
@@ -816,9 +794,7 @@ h2.nopad2 {
   box-sizing: border-box;
   width: 100%;
   font-size: 80%;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-bottom: 2vw;
+  padding: 0 1.25rem 1.25rem;
 }
 .responsiveiframe {
   width: 100%;

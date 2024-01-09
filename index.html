@@ -5,106 +5,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilo/estilo.css" />
     <title>index</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
-    <header class="speHead">
-      <div class="cab">
-        <a href="index.html"><img src="img/logoVital360.svg" 
-              alt="Logotipo vital360"
-        class="logo"
-              /></a>
+    <header>
+      <nav class="nav">
+        <a href="index.html"
+          ><img src="img/logoVital360.svg" alt="Logotipo vital360" class="logo"
+        /></a>
         <ul class="right">
-          <li class="lis"><a class="hlin" href="blog.html">BLOG</a></li>
-          <li class="lis2"><a class="hlin" href="video.html">VÍDEOS</a></li>
+          <li class="l1"><a class="anav" href="blog.html">BLOG</a></li>
+          <li class="l2"><a class="anav" href="videos.html">VÍDEOS</a></li>
         </ul>
-      </div>
+      </nav>
     </header>
     <main>
-      <div class="titulo">
-        <h1 class="FW900">Vital360: Cuidando de ti en cada giro de la vida</h1>
+      <div class="cabecera">
+        <h1 class="titulo">Vital360: Cuidando de ti en cada giro de la vida</h1>
       </div>
-      <div class="formulario paddingind">
+      <div class="formulario">
         <h1>¿Por qué Vital360?</h1>
         <div class="grid">
-          <div>
+          <div class="text1">
             <p>
-              En un mundo cada vez más acelerado, el <strong>cuidado personal</strong>, la <strong>salud</strong> y el <strong>bienestar</strong> se han convertido en aspectos fundamentales de una vida plena y equilibrada.
+              En un mundo cada vez más acelerado, el
+              <strong>cuidado personal</strong>, la <strong>salud</strong> y el
+              <strong>bienestar</strong> se han convertido en aspectos
+              fundamentales de una vida plena y equilibrada.
             </p>
             <p>
-              Atender a nuestras necesidades físicas, mentales y emocionales no es un lujo, sino una necesidad vital para mantener un <strong>equilibrio en nuestras vidas</strong>. Al cuidar de nosotros mismos, no solo mejoramos nuestra calidad de vida, sino que también incrementamos nuestra capacidad para afrontar los desafíos diarios y disfrutar plenamente de cada momento.
+              Atender a nuestras necesidades físicas, mentales y emocionales no
+              es un lujo, sino una necesidad vital para mantener un
+              <strong>equilibrio en nuestras vidas</strong>. Al cuidar de
+              nosotros mismos, no solo mejoramos nuestra calidad de vida, sino
+              que también incrementamos nuestra capacidad para afrontar los
+              desafíos diarios y disfrutar plenamente de cada momento.
             </p>
             <p>
-              El bienestar integral es, por tanto, un viaje continuo y gratificante hacia el descubrimiento y mantenimiento de nuestro mejor yo. <strong>Vital360</strong> quiere acompañarte en el trayecto.
+              El bienestar integral es, por tanto, un viaje continuo y
+              gratificante hacia el descubrimiento y mantenimiento de nuestro
+              mejor yo. <strong>Vital360</strong> quiere acompañarte en el
+              trayecto.
             </p>
           </div>
           <form>
-            <p>Para estar al día, <strong>suscríbete a nuestra <em>newsletter</em></strong>.</p>
+            <p>
+              Para estar al día,
+              <strong>suscríbete a nuestra <em>newsletter</em></strong
+              >.
+            </p>
             <p><label for="nombre">Nombre:</label></p>
-            <p><input class="campo" type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" pattern="[A-Za-z(')(-)]{3,64}" required/></p>
+            <p>
+              <input
+                class="input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Introduce tu nombre"
+                pattern="[A-Za-z(')(-)]{3,64}"
+                required
+              />
+            </p>
             <p><label for="email">Correo electronico:</label></p>
-            <p><input class="campo" type="email" id="email" name="email" placeholder="Introduce tu email" pattern="[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$" required/></p>
-            <p class="legal">INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <strong>Vital360</strong>. <strong>Finalidades</strong>: recogida de datos para el envío del boletín electrónico. <strong>Legitimación</strong>: consentimiento del interesado. <strong>Destinatarios</strong>: no están previstas cesiones de datos a terceros, excepto obligación legal. <strong>Derechos</strong>: puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a <a href="mailto:info@vital360.com">info@vital360.com</a>. <strong>Información Adicional</strong>: puede ampliar la información en el enlace de <a href="">Aviso legal</a> y <a href="">Política de privacidad</a>.</p>
-            <p><input class="legal" id="TyC" type="checkbox" required /><label class="legal" for="TyC"> He leído y acepto la política de privacidad</label></p>
-            <input class="sus" type="submit" value="SUSCRÍBEME A LA NEWSLETTER"/>
+            <p>
+              <input
+                class="input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Introduce tu email"
+                pattern="[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$"
+                required
+              />
+            </p>
+            <p class="info">
+              INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE
+              <strong>Vital360</strong>. <strong>Finalidades</strong>: recogida
+              de datos para el envío del boletín electrónico.
+              <strong>Legitimación</strong>: consentimiento del interesado.
+              <strong>Destinatarios</strong>: no están previstas cesiones de
+              datos a terceros, excepto obligación legal.
+              <strong>Derechos</strong>: puede retirar su consentimiento en
+              cualquier momento, así como acceder, rectificar, suprimir sus
+              datos y otros derechos dirigiéndose a
+              <a href="mailto:info@vital360.com">info@vital360.com</a>.
+              <strong>Información Adicional</strong>: puede ampliar la
+              información en el enlace de <a href="">Aviso legal</a> y
+              <a href="">Política de privacidad</a>.
+            </p>
+            <p>
+              <input class="info" id="TyC" type="checkbox" required /><label
+                class="info"
+                for="TyC"
+              >
+                He leído y acepto la política de privacidad</label
+              >
+            </p>
+            <button class="sus" type="submit">
+              SUSCRÍBEME A LA NEWSLETTER
+            </button>
           </form>
         </div>
       </div>
       <div class="apartados">
         <div class="gridleft">
           <div class="leftimage">
-            <img src="img/home-bloc1.jpg"
-              alt="home bloc 1"
-              class="imapar"
-              />
+            <img src="img/home-bloc1.jpg" alt="home bloc 1" class="imapar" />
             <legend>© Dovile Ramoskaite, en Unsplash</legend>
           </div>
           <div class="righttext">
             <h2>Nutrición y alimentación saludables</h2>
-            <p class="paddingbot">Descubre como una nutrición adecuada puede transformar tu salud. Consejos prácticos sobre dietas balanceadas, recetas saludables y la importancia de los nutrientes.</p>
-            <p><a href="" class="spe"><span class="sus">ME INTERESA</span></a></p>
+            <p class="paddingbot">
+              Descubre como una nutrición adecuada puede transformar tu salud.
+              Consejos prácticos sobre dietas balanceadas, recetas saludables y
+              la importancia de los nutrientes.
+            </p>
+            <p>
+              <button class="spe sus">
+                <span >ME INTERESA</span>
+              </button>
+            </p>
           </div>
         </div>
         <div class="gridright">
           <div class="lefttext">
-            <h2>Ejercicio y actividad física </h2>
-            <p class="paddingbot">El ejercicio físico es clave para un estilo de vida saludable. Explora rutinas de fitness, consejos para mantenerse activo y descubre cómo el ejercicio beneficia mente y cuerpo.</p>
-            <p><a href="" class="spe"><span class="sus">ME INTERESA</span></a></p>
+            <h2>Ejercicio y actividad física</h2>
+            <p class="paddingbot">
+              El ejercicio físico es clave para un estilo de vida saludable.
+              Explora rutinas de fitness, consejos para mantenerse activo y
+              descubre cómo el ejercicio beneficia mente y cuerpo.
+            </p>
+            <p>
+              <button class="spe sus">
+                <span >ME INTERESA</span>
+              </button>
+            </p>
           </div>
           <div class="rightimage">
-            <img src="img/home-bloc2.jpg"
-              alt="home bloc 2"
-              class="imapar"
-              />
+            <img src="img/home-bloc2.jpg" alt="home bloc 2" class="imapar" />
             <legend>© Logan Weaver, en Unsplash</legend>
           </div>
         </div>
         <div class="gridleft">
           <div class="leftimage">
-            <img src="img/home-bloc3.jpg"
-              alt="home bloc 3"
-              class="imapar"
-              />
+            <img src="img/home-bloc3.jpg" alt="home bloc 3" class="imapar" />
             <legend>© Le Minh Phuong, en Unsplash</legend>
           </div>
           <div class="righttext">
             <h2>Bienestar mental</h2>
-            <p class="paddingbot">Tu bienestar mental es tan importante como tu salud física. Aprende sobre técnicas de relajación, mindfulness y estrategias para manejar el estrés.</p>
-            <p><a href="" class="spe"><span class="sus">ME INTERESA</span></a></p>
+            <p class="paddingbot">
+              Tu bienestar mental es tan importante como tu salud física.
+              Aprende sobre técnicas de relajación, mindfulness y estrategias
+              para manejar el estrés.
+            </p>
+            <p>
+              <button class="spe sus">
+                <span >ME INTERESA</span>
+              </button>
+            </p>
           </div>
         </div>
         <div class="gridright">
           <div class="lefttext">
             <h2>Consejos para un estilo de vida saludable</h2>
-            <p class="paddingbot">Pequeños cambios pueden marcar una gran diferencia. Descubre cómo mejorar tu sueño, mantener una hidratación adecuada y equilibrar tu vida cotidiana.</p>
-            <p><a href="" class="spe"><span class="sus">ME INTERESA</span></a></p>
+            <p class="paddingbot">
+              Pequeños cambios pueden marcar una gran diferencia. Descubre cómo
+              mejorar tu sueño, mantener una hidratación adecuada y equilibrar
+              tu vida cotidiana.
+            </p>
+            <p>
+              <button class="spe sus">
+                <span >ME INTERESA</span>
+              </button>
+            </p>
           </div>
           <div class="rightimage">
-            <img src="img/home-bloc4.jpg"
-              alt="home bloc 4"
-              class="imapar"
-              />
+            <img src="img/home-bloc4.jpg" alt="home bloc 4" class="imapar" />
             <legend>© Logan Weaver, en Unsplash</legend>
           </div>
         </div>
@@ -113,46 +190,42 @@
     <footer>
       <div id="pie">
         <div class="left2">
-          <img src="img/logoVital360-n.svg" 
-          alt="Logotipo vital360"
-          class="logo" 
-            />
-          <p id="pie2">
-            2023-2024 | Jose Ramos Masip
-          </p>
+          <img
+            src="img/logoVital360-n.svg"
+            alt="Logotipo vital360"
+            class="logo"
+          />
+          <p id="pie2">2023-2024 | Jose Ramos Masip</p>
         </div>
         <div class="right2">
           <ul>
-            <li class="lis3"><a class="ilin" href="">
-              <img src="img/twitter.svg" 
-                alt="Logotipo twitter"
-                />
-            </a></li>
-            <li class="lis3"><a class="ilin" href="">
-              <img src="img/instagram.svg" 
-                alt="Logotipo instagram"
-                />
-            </a></li>
-            <li class="lis3"><a class="ilin" href="">
-              <img src="img/youtube.svg" 
-                alt="Logotipo youtube"
-                />
-            </a></li>
+            <li class="lis3">
+              <a class="ilin" href="">
+                <img src="img/twitter.svg" alt="Logotipo twitter" />
+              </a>
+            </li>
+            <li class="lis3">
+              <a class="ilin" href="">
+                <img src="img/instagram.svg" alt="Logotipo instagram" />
+              </a>
+            </li>
+            <li class="lis3">
+              <a class="ilin" href="">
+                <img src="img/youtube.svg" alt="Logotipo youtube" />
+              </a>
+            </li>
           </ul>
           <ul id="pie2">
-            <li class="lis1"><a class="elin" href="">
-              Política de privacidad
-            </a></li>
-            <li class="lis4"><a class="elin" href="">
-              Política de <em>cookies</em>
-            </a></li>
-            <li class="lis5"><a class="elin" href="">
-              Aviso legal
-            </a></li>
+            <li class="lis1">
+              <a class="elin" href=""> Política de privacidad </a>
+            </li>
+            <li class="lis4">
+              <a class="elin" href=""> Política de <em>cookies</em> </a>
+            </li>
+            <li class="lis5"><a class="elin" href=""> Aviso legal </a></li>
           </ul>
         </div>
       </div>
     </footer>
   </body>
-  </html>
-  
+</html>
