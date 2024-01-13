@@ -1,3 +1,13 @@
+/**
+ * RUTA DE ARCHIVO: /pec3/estilo/estilo.css
+ * 
+ * Estilos CSS para el documento HTML.
+ * 
+ * Contiene estilos para el encabezado, pie de página, cuerpo y secciones específicas como index.html, video & blog, y entrada.html.
+ * 
+ * Los estilos están organizados según consultas de medios para diferentes tamaños de pantalla (PC, tableta, teléfono).
+ */
+
 html {
   margin: auto;
   background-color: rgb(247, 247, 247);
@@ -97,7 +107,7 @@ footer {
   display: inline;
   padding-left: 0.5rem;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   #pie {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -119,7 +129,7 @@ footer {
   }
 
 }
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   #pie {
     text-align: center;
   }
@@ -153,7 +163,7 @@ footer {
 main {
   font-size: 1.2rem;
 }
-@media (max-width: 992px) {
+@media (max-width: 500px) {
   main {
     font-size: 1rem;
   }
@@ -214,9 +224,26 @@ legend {
   text-align: right;
 }
 
+/**
+ * 
+ * CSS styles for different screen sizes (PC, Tablet, Phone).
+ * 
+ * PC:
+ * - Defines styles for screens with a minimum width of 1100px.
+ * - Adjusts padding, font sizes, and grid layout for PC screens.
+ * 
+ * Tablet:
+ * - Defines styles for screens with a maximum width of 1100px.
+ * - Adjusts padding, font sizes, and grid layout for tablet screens.
+ * 
+ * Phone:
+ * - Defines styles for screens with a maximum width of 500px.
+ * - Adjusts padding, font sizes, and grid layout for phone screens.
+ */
+
 /* PC */
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   .cabecera{
     padding: 6rem 25rem 6rem 9.5rem;
   }
@@ -275,7 +302,7 @@ legend {
 
 /* Tablet */
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .apartados {
     padding: 3.75rem 1.25rem 1.875rem;
   }
@@ -400,19 +427,20 @@ legend {
 /* //////////////////// */
 /* 	VIDEO & BLOG	    */
 /* //////////////////// */
-@media (min-width: 1200px) {
-  .videoform {
+@media (min-width: 1100px) {
+  .cuerpo {
     padding: 0.625rem 2.5rem 4.375rem;
   }
 
-  @media (max-width: 1200px) and (min-width: 992px) {
-    .videoform {
-      padding: 0.625rem 1.25rem 4.375rem;
+  @media (max-width: 1100px) and (min-width: 500px) {
+    .cuerpo {
+      padding: 1rem 1.25rem 4.375rem;
+      margin-left: 0.5rem;
     }
   }
 
-  @media (max-width: 992px) {
-    .videoform {
+  @media (max-width: 500px) {
+    .cuerpo {
       padding: 0.625rem 1.25rem 4.375rem;
     }
   }
@@ -425,7 +453,7 @@ legend {
 }
 
 /*Codigo para la parte blog.html*/
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   .firstblog {
     grid-column: span 2;
   }
@@ -452,7 +480,7 @@ legend {
     font-size: 70%;
   }
 }
-@media (max-width: 1200px) and (min-width: 992px) {
+@media (max-width: 1100px) and (min-width: 500px) {
   .blo {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -476,7 +504,7 @@ legend {
     font-size: 70%;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 500px) {
   .blo {
     display: grid;
     grid-template-columns: 1fr;
@@ -586,7 +614,7 @@ a.speT:hover {
 }
 
 /* Codigo para la parte entrada.html  ############################################################################*/
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   .entfor {
     padding: 0.625rem 9.375rem 4.375rem;
   }
@@ -614,7 +642,7 @@ a.speT:hover {
     font-size: 75%;
   }
 }
-@media (max-width: 1200px) and (min-width: 992px) {
+@media (max-width: 1100px) and (min-width: 500px) {
   .entfor {
     padding: 0.625rem 1.25rem 4.375rem;
   }
@@ -644,7 +672,7 @@ a.speT:hover {
     right: 2.5rem;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 500px) {
   .entfor {
     padding: 0.625rem 1.25rem 4.375rem 1.25rem;
   }
@@ -762,7 +790,7 @@ h2.nopad2 {
 }
 
 /*Codigo para la parte video.html  ############################################################################*/
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   .vid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -771,7 +799,7 @@ h2.nopad2 {
     height: auto;
   }
 }
-@media (max-width: 1200px) and (min-width: 992px) {
+@media (max-width: 1100px) and (min-width: 500px) {
   .vid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -780,7 +808,7 @@ h2.nopad2 {
     height: auto;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 500px) {
   .vid {
     display: grid;
     grid-template-columns: 1fr;
