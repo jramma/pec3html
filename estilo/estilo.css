@@ -38,6 +38,9 @@ h1,
 h2 {
   font-family: "Noto Serif";
 }
+button{
+  color: #fff;
+}
 /* //////////////////// */
 /* 				 HEADER */
 /* //////////////////// */
@@ -89,7 +92,7 @@ footer {
   padding-top: 2vw;
   padding-bottom: 4vw;
 }
-.lis3 {
+.logos {
   display: inline;
   padding-left: 0.5rem;
 }
@@ -99,46 +102,40 @@ footer {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
-  .right2 {
+  .esquina_derecha {
     text-align: right;
   }
-  .left2 {
+  .esquina_izquierda {
     text-align: left;
   }
-  .lis1 {
+  .li-link {
     display: inline;
     padding-right: 0.5rem;
   }
-  .lis5 {
-    display: inline;
+  .cookies, .aviso {
     padding-left: 0.5rem;
     border-left: 1px solid;
   }
-  .lis4 {
-    display: inline;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    border-left: 1px solid;
-  }
+
 }
 @media (max-width: 1200px) {
   #pie {
     text-align: center;
   }
-  .left2 {
+  .esquina_izquierda {
     text-align: center;
   }
-  .right2 {
+  .esquina_derecha {
     text-align: center;
   }
 }
-#pie2 {
+#pie{
   font-size: 0.7rem;
 }
-.ilin {
+.rs {
   text-decoration: none;
 }
-.ilin:hover {
+.rs:hover {
   opacity: 0.7;
 }
 .elin {
@@ -186,15 +183,16 @@ main {
 h1.titulo {
   font-weight: 900;
 }
-.sus {
+.btn {
   color: rgb(255, 255, 255);
   border-radius: 5px;
   border: none;
   background-color: rgb(0, 59, 74);
   padding: 0.5rem 1rem;
 }
-.sus:hover {
+.btn:hover {
   background-color: rgb(191, 12, 240);
+  cursor: pointer;
 }
 .input {
   width: 95%;
@@ -244,7 +242,7 @@ legend {
   .info {
     font-size: 1rem;
   }
-  .sus {
+  .btn {
     font-size: 1.2rem;
   }
   .leftimage {
@@ -296,7 +294,7 @@ legend {
   .info {
     font-size: 1rem;
   }
-  .sus {
+  .btn {
     font-size: 1.2rem;
   }
   .leftimage {
@@ -351,7 +349,7 @@ legend {
   .info {
     font-size: 0.8rem;
   }
-  .sus {
+  .btn {
     font-size: 1rem;
   }
   .left {
