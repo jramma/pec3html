@@ -40,6 +40,7 @@ h2 {
 }
 button{
   color: #fff;
+  font-weight: bold;
 }
 /* //////////////////// */
 /* 				 HEADER */
@@ -435,7 +436,7 @@ legend {
     grid-gap: 4vw;
     margin-bottom: 2vw;
   }
-  .eti1 {
+  .btn_verde {
     font-size: 40%;
   }
   .eti2 {
@@ -459,7 +460,7 @@ legend {
     grid-gap: 4vw;
     margin-bottom: 2vw;
   }
-  .eti1 {
+  .btn_verde {
     font-size: 40%;
   }
   .eti2 {
@@ -484,7 +485,7 @@ legend {
     grid-gap: 2.5rem;
     margin-bottom: 1.25rem;
   }
-  .eti1 {
+  .btn_verde {
     font-size: 90%;
   }
   .eti2 {
@@ -509,7 +510,7 @@ legend {
 .blogima {
   width: 100%; /*Usado en entrada.html tambien, cuidado si se modifica  ############################################################################*/
 }
-.eti1 {
+.btn_verde {
   position: absolute;
   border: none;
   top: 2%;
@@ -543,7 +544,7 @@ a.speC {
 a.speT:hover {
   color: rgb(191, 12, 240);
 }
-.eti1:hover {
+.btn_verde:hover {
   background-color: rgb(191, 12, 240);
 }
 .leer {
