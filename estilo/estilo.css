@@ -185,7 +185,7 @@ main {
 .text1 {
   line-height: 2rem;
 }
-.paddingbot {
+.pad_p_ind {
   padding-bottom: 3rem;
 }
 .speHead {
@@ -222,7 +222,12 @@ legend {
   font-size: 0.4rem;
   text-align: right;
 }
-
+.apartados p{
+  font-weight: 300;
+}
+.apartados h2{
+  font-weight: 600;
+}
 
 /**
  * 
@@ -264,6 +269,7 @@ legend {
   }
   h1.titulo {
     font-size: 4.5rem;
+    padding-left: 6rem;
   }
   .input {
     font-size: 1.5rem;
@@ -305,9 +311,7 @@ legend {
   .formulario h2{
     font-size: 2rem;
   }
-  h1{
-    margin-left: 2rem;
-  }
+ 
   .apartados {
     padding: 3.75rem 1.25rem 1.875rem;
   }
@@ -516,6 +520,9 @@ iframe {
   .blog1 {
     grid-column: span 2;
   }
+  h1{
+    font-size: 2rem;
+  }
   .blog {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -545,7 +552,10 @@ iframe {
     grid-gap: 2rem; 
     margin: 0 2rem 2rem 2rem; 
   }
-  
+  h1{
+    margin-left: 2rem;
+    font-size: 2rem;
+  }
   .derechos_autor {
     font-size: 0.4rem;
   }
@@ -745,7 +755,7 @@ a.no_dec2:hover {
   grid-gap: 1rem;
   height: auto;
 }
-.men {
+.navegacion {
   font-size: 0.7rem;
 }
 .index {
@@ -805,11 +815,10 @@ h2.artic_recien {
 }
 h1.entrada_titulos {
   margin: 0.5rem 0 0 0;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 h2.entrada_titulos {
-  margin-top: 0.5rem;
-  margin-bottom: 0;
+  margin: 0;
 }
 .categorias {
   margin-bottom: 0.5rem;
