@@ -218,9 +218,12 @@ h1.titulo {
 .apartados {
   background-color: rgb(229, 225, 254);
 }
-legend {
+figcaption {
   font-size: 0.4rem;
   text-align: right;
+}
+figure{
+  margin: 0;
 }
 .apartados p{
   font-weight: 300;
@@ -644,6 +647,7 @@ a.no_dec2:hover {
 }
 .blognav {
   display: inline-flex;
+  margin-bottom: 4rem;
 }
 .uno,
 .dos,
