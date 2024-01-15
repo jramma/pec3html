@@ -26,5 +26,11 @@ La utilización de Grid proporciona un sistema de diseño más avanzado, permiti
 En resumen, tanto en el HTML como en el CSS, el enfoque ha sido la estructura semántica, la accesibilidad, la eficiencia en la carga de la página y la adaptabilidad a diferentes dispositivos, todo ello para mejorar la experiencia del usuario y facilitar el mantenimiento del código.
 
 
+## Web:
+
+https://protected-content.ftp.uoc.edu/20231_M4.252_html/aula2/jrammas%40uoc.edu/index.html
+
+
+
 
 
