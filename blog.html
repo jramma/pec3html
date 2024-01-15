@@ -7,6 +7,7 @@
     <title>blog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="img/logoVital360.svg" type="image/svg+xml" sizes="any">
   </head>
   <body>
     <header>
@@ -14,7 +15,7 @@
         <a href="index.html"
           ><img src="img/logoVital360.svg" alt="Logotipo vital360" class="logo"
         /></a>
-        <ul class="right">
+        <ul class="text_align_right">
           <li class="l1"><a class="anav" href="blog.html">BLOG</a></li>
           <li class="l2"><a class="anav" href="videos.html">VÍDEOS</a></li>
         </ul>
@@ -23,23 +24,26 @@
     <main>
       <div class="cuerpo">
         <h1>El Blog de salud de Vital360</h1>
-        <div class="blo">
-          <div class="firstblog">
+        <div class="blog">
+          <div class="blog1">
             <div class="overlaytext">
               <img
                 src="img/estrategias-vida-activa.jpg"
                 alt="estrategias para una vida activa"
                 class="blogima"
               />
-              <div class="btn_verde">
-                <a class="speC" href="entrada.html">Fitness</a>
+              <!-- he usado div en lugar de btn porque no es correcto
+              usar un enlace dentro de un botón, se podría hacer lo mismo
+              con un botón y JavaScript, pero así sería solo con html y css: -->
+              <div class="btn_verde back_verde">
+                <a class="no_dec" href="entrada.html">Fitness</a>
               </div>
-              <div class="eti2">© Erik Dungan, en Unsplash</div>
+              <div class="derechos_autor">© Erik Dungan, en Unsplash</div>
             </div>
             <div class="blogleg">
-              <p class="imaleg">Por Daniel López - 30 de diciembre de 2023</p>
+              <p class="info_img">Por Daniel López - 30 de diciembre de 2023</p>
               <h2>
-                <a class="speT" href="entrada.html"
+                <a class="no_dec2" href="entrada.html"
                   >Estrategias para una vida activa</a
                 >
               </h2>
@@ -59,15 +63,15 @@
                 alt="desintoxicacion digital"
                 class="blogima"
               />
-              <div class="btn_verde">
-                <a class="speC" href="">Bienestar mental</a>
+              <div class="btn_verde back_verde">
+                <a class="no_dec" href="">Bienestar mental</a>
               </div>
-              <div class="eti2">© Thom Holmes, en Unsplash</div>
+              <div class="derechos_autor">© Thom Holmes, en Unsplash</div>
             </div>
             <div class="blogleg">
-              <p class="imaleg">Por Sofía Martín - 25 de diciembre de 2023</p>
+              <p class="info_img">Por Sofía Martín - 25 de diciembre de 2023</p>
               <h2>
-                <a class="speT" href="">Estrategias para una vida activa</a>
+                <a class="no_dec2" href="">Estrategias para una vida activa</a>
               </h2>
               <p>
                 En la era tecnológica, desconectarse es vital. Este artículo
@@ -85,15 +89,15 @@
                 alt="Conexion mente-cuerpo"
                 class="blogima"
               />
-              <div class="btn_verde">
-                <a class="speC" href="">Bienestar mental</a>
+              <div class="btn_verde back_verde">
+                <a class="no_dec" href="">Bienestar mental</a>
               </div>
-              <div class="eti2">© Erik Dungan, en Unsplash</div>
+              <div class="derechos_autor">© Erik Dungan, en Unsplash</div>
             </div>
             <div class="blogleg">
-              <p class="imaleg">Por Elena Navarro - 20 de diciembre de 2023</p>
+              <p class="info_img">Por Elena Navarro - 20 de diciembre de 2023</p>
               <h2>
-                <a class="speT" href="">La conexión entre mente y cuerpo</a>
+                <a class="no_dec2" href="">La conexión entre mente y cuerpo</a>
               </h2>
               <p>
                 Este artículo explora cómo tu estado mental puede afectar a tu
@@ -111,15 +115,15 @@
                 alt="Alimentos combaten estres"
                 class="blogima"
               />
-              <div class="btn_verde">
-                <a class="speC" href="entrada.html">Nutrición</a>
+              <div class="btn_verde back_verde">
+                <a class="no_dec" href="entrada.html">Nutrición</a>
               </div>
-              <div class="eti2">© Brooke Lark, en Unsplash</div>
+              <div class="derechos_autor">© Brooke Lark, en Unsplash</div>
             </div>
             <div class="blogleg">
-              <p class="imaleg">Por Pedro Jiménez - 15 de diciembre de 2023</p>
+              <p class="info_img">Por Pedro Jiménez - 15 de diciembre de 2023</p>
               <h2>
-                <a class="speT" href="entrada.html"
+                <a class="no_dec2" href="entrada.html"
                   >Alimentos que combaten el estrés</a
                 >
               </h2>
@@ -139,15 +143,15 @@
                 alt="yoga para principiantes"
                 class="blogima"
               />
-              <div class="btn_verde">
-                <a class="speC" href="#">Fitness</a>
+              <div class="btn_verde back_verde">
+                <a class="no_dec" href="#">Fitness</a>
               </div>
-              <div class="eti2">© Dylan Gillis, en Unsplash</div>
+              <div class="derechos_autor">© Dylan Gillis, en Unsplash</div>
             </div>
             <div class="blogleg">
-              <p class="imaleg">Por Ana Torres - 10 de diciembre de 2023</p>
+              <p class="info_img">Por Ana Torres - 10 de diciembre de 2023</p>
               <h2>
-                <a class="speT" href=""
+                <a class="no_dec2" href=""
                   >Yoga para principiantes: empezando tu viaje</a
                 >
               </h2>
@@ -167,15 +171,15 @@
                 alt="hidratacion"
                 class="blogima"
               />
-              <div class="btn_verde">
-                <a class="speC" href="">Nutrición</a>
+              <div class="btn_verde back_verde">
+                <a class="no_dec" href="">Nutrición</a>
               </div>
-              <div class="eti2">© Thao Lee, en Unsplash</div>
+              <div class="derechos_autor">© Thao Lee, en Unsplash</div>
             </div>
             <div class="blogleg">
-              <p class="imaleg">Por Carla Rodríguez - 5 de diciembre de 2023</p>
+              <p class="info_img">Por Carla Rodríguez - 5 de diciembre de 2023</p>
               <h2>
-                <a class="speT" href="">Hidratación: más que solo beber agua</a>
+                <a class="no_dec2" href="">Hidratación: más que solo beber agua</a>
               </h2>
               <p>
                 Aprende sobre la importancia de la hidratación para tu salud y
@@ -193,15 +197,15 @@
                 alt="bienestar general"
                 class="blogima"
               />
-              <div class="btn_verde">
-                <a class="speC" href="">Bienestar general</a>
+              <div class="btn_verde back_verde">
+                <a class="no_dec" href="">Bienestar general</a>
               </div>
-              <div class="eti2">© Kate Stone Matheson, en Unsplash</div>
+              <div class="derechos_autor">© Kate Stone Matheson, en Unsplash</div>
             </div>
             <div class="blogleg">
-              <p class="imaleg">Por Jorge Martínez - 30 de noviembre de 2023</p>
+              <p class="info_img">Por Jorge Martínez - 30 de noviembre de 2023</p>
               <h2>
-                <a class="speT" href="">La importancia del sueño en tu salud</a>
+                <a class="no_dec2" href="">La importancia del sueño en tu salud</a>
               </h2>
               <p>
                 El sueño es un pilar fundamental para una buena salud. Descubre
@@ -215,15 +219,15 @@
         </div>
         <div class="center">
           <ul class="blognav">
-            <a class="First" href="#"><li>1</li></a>
-            <a class="Next" href="#"><li>2</li></a>
-            <a class="Next" href="#"><li>3</li></a>
-            <a class="More" href="#"><li>...</li></a>
+            <a class="uno" href="#"><li>1</li></a>
+            <a class="dos" href="#"><li>2</li></a>
+            <a class="dos" href="#"><li>3</li></a>
+            <a class="mas" href="#"><li>...</li></a>
           </ul>
         </div>
       </div>
     </main>
-    <footer>
+    <footer class="back_verde">
       <div id="pie">
         <div class="esquina_izquierda">
           <img src="img/logoVital360-n.svg" alt="Logo" class="logo" />
