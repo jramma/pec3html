@@ -70,7 +70,6 @@ header {
 }
 .logo {
   height: 2.5rem;
-  margin-left: -1rem;
 }
 .anav {
   color: rgb(0, 59, 74);
@@ -219,7 +218,7 @@ h1.titulo {
   background-color: rgb(229, 225, 254);
 }
 legend {
-  font-size: 40%;
+  font-size: 0.4rem;
   text-align: right;
 }
 
@@ -297,6 +296,9 @@ legend {
 /* Tablet */
 
 @media (max-width: 1100px) {
+  h1{
+    margin-left: 2rem;
+  }
   .apartados {
     padding: 3.75rem 1.25rem 1.875rem;
   }
@@ -347,6 +349,9 @@ legend {
 /* Phone */
 
 @media (max-width: 500px) {
+  h1{
+    margin-left: 1rem;
+  }
   .apartados {
     padding: 3.75rem 1.25rem 1.875rem;
   }
@@ -440,8 +445,9 @@ legend {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: left;
-    grid-gap: 4rem;
+    grid-gap: 2rem;
     height: auto;
+    margin: 1rem;
   }
 }
 @media (max-width: 1100px) and (min-width: 500px) {
@@ -449,8 +455,9 @@ legend {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: left;
-    grid-gap: 4rem;
+    grid-gap: 2rem;
     height: auto;
+    margin: 2rem;
   }
 }
 @media (max-width: 500px) {
@@ -460,12 +467,14 @@ legend {
     justify-content: left;
     height: auto;
     grid-gap: 4rem;
+    margin: 1rem;
+
   }
 }
-.vidlegend {
+.video_info {
   box-sizing: border-box;
   width: 100%;
-  font-size: 80%;
+  font-size: 0.8rem;
   padding: 0 1.25rem 1.25rem;
 }
 .responsiveiframe {
@@ -474,6 +483,11 @@ legend {
   padding-bottom: 56.25%;
   position: relative;
 }
+.video_div{
+  background-color: #fff;
+  border: 1px solid rgb(158, 157, 171);
+}
+
 iframe {
   position: absolute;
   width: 100%;
@@ -499,7 +513,7 @@ iframe {
   .derechos_autor {
     font-size: 0.4rem;
   }
-  .blogleg {
+  .blog_info {
     font-size: 0.8rem;
   }
   .center {
@@ -514,14 +528,14 @@ iframe {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: left;
-    grid-gap: 4rem;
-    margin-bottom: 2rem;
+    grid-gap: 2rem; 
+    margin: 0 2rem 2rem 2rem; 
   }
   
   .derechos_autor {
     font-size: 0.4rem;
   }
-  .blogleg {
+  .blog_info {
     font-size: 0.6rem;
   }
   .center {
@@ -538,13 +552,13 @@ iframe {
     justify-content: left;
     height: auto;
     grid-gap: 2.5rem;
-    margin-bottom: 1.25rem;
+    margin: 1rem;
   }
   
   .derechos_autor {
     font-size: 0.9rem;
   }
-  .blogleg {
+  .blog_info {
     font-size: 1rem;
   }
   .center {
@@ -582,9 +596,8 @@ iframe {
   padding: 0.1875rem 0.3125rem;
   font-weight: 700;
 }
-.blogleg {
+.blog_info {
   box-sizing: border-box;
-  width: 1rem;
   padding: 0 1.3rem 1.3rem;
 }
 .info_img {
@@ -639,10 +652,10 @@ a.no_dec2:hover {
 /* ############################################################################
                           entrada.html
 ############################################################################ */@media (min-width: 1100px) {
-  .entfor {
+  .entrada_div {
     padding: 0.6rem 9.4rem 4.4rem;
   }
-  .cueent {
+  .entrada1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
     justify-content: left;
@@ -667,10 +680,10 @@ a.no_dec2:hover {
   }
 }
 @media (max-width: 1100px) and (min-width: 500px) {
-  .entfor {
+  .entrada_div {
     padding: 0.625rem 1.25rem 4.375rem;
   }
-  .cueent {
+  .entrada1 {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: left;
@@ -697,10 +710,10 @@ a.no_dec2:hover {
   }
 }
 @media (max-width: 500px) {
-  .entfor {
+  .entrada_div {
     padding: 0.6rem 1.25rem 4.4rem 1.3rem;
   }
-  .cueent {
+  .entrada1 {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: left;
@@ -729,11 +742,11 @@ a.no_dec2:hover {
 .men {
   font-size: 0.7rem;
 }
-.hent {
+.index {
   color: rgb(0, 59, 74);
   text-decoration: none;
 }
-.hent:hover {
+.index:hover {
   color: rgb(191, 12, 240);
 }
 .art {
@@ -742,10 +755,10 @@ a.no_dec2:hover {
   height: auto;
   padding: 0.5rem;
 }
-.figur {
+.img_entrada {
   background-color: rgb(229, 225, 254);
 }
-.figur2 {
+.img_entrada2 {
   background-color: rgb(255, 255, 255);
 }
 .leg2 {
@@ -753,14 +766,14 @@ a.no_dec2:hover {
 }
 .imag {
   color: rgb(158, 157, 171);
-  font-size: 70%;
+  font-size: 0.7rem;
 }
 
 .smaller {
-  font-size: 85%;
+  font-size: 0.8rem;
 }
 .smaller2 {
-  font-size: 75%;
+  font-size: 0.7rem;
 }
 .lista_entrada {
   list-style: decimal;

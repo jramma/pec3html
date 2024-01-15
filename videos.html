@@ -14,10 +14,10 @@
 			- Etiqueta div.cuerpo: contiene los vídeos y su descripción.
 				- Etiqueta h1: título de la sección de vídeos.
 				- Etiqueta div.vid: contenedor de los vídeos.
-					- Etiqueta div.video_box: contenedor de cada vídeo.
+					- Etiqueta div.video_div: contenedor de cada vídeo.
 						- Etiqueta div.responsiveiframe: contenedor del iframe que muestra el vídeo.
 							- Etiqueta iframe: muestra el vídeo de YouTube.
-						- Etiqueta div.vidlegend: contenedor de la leyenda del vídeo.
+						- Etiqueta div.video_info: contenedor de la leyenda del vídeo.
 							- Etiqueta h2: título del vídeo.
 							- Etiqueta p: descripción del vídeo.
 		- Etiqueta footer: contiene el pie de página.
@@ -45,123 +45,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilo/estilo.css" />
     <title>vídeos</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="icon" href="img/logoVital360.svg" type="image/svg+xml" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="icon"
+      href="img/logoVital360.svg"
+      type="image/svg+xml"
+      sizes="any"
+    />
   </head>
   <body>
-	<header>
-		<nav class="nav">
-		  <a href="index.html"
-			><img src="img/logoVital360.svg" alt="Logotipo vital360" class="logo"
-		  /></a>
-		  <ul class="text_align_right">
-			<li class="l1"><a class="anav" href="blog.html">BLOG</a></li>
-			<li class="l2"><a class="anav" href="videos.html">VÍDEOS</a></li>
-		  </ul>
-		</nav>
-	  </header>
-	<main>
-		<div class="cuerpo">
-			<h1>Vídeos de ejercicio y bienestar</h1>
-			<div class="vid">
-				<div class="video_box">
-					<div class="responsiveiframe"> 
-						<iframe src="https://www.youtube.com/embed/VaoV1PrYft4"></iframe>
-					</div>
-					<div class="vidlegend">
-						<h2>Yoga para principiantes</h2>
-						<p>Este vídeo es una introducción ideal al yoga para principiantes. Ofrece una rutina suave y accesible para empezar a explorar los beneficios de esta práctica milenaria.</p>
-					</div>
-				</div>
-				<div class="video_box">
-					<div class="responsiveiframe"> 
-						<iframe src="https://www.youtube.com/embed/ksi-c8YgClY"></iframe>
-					</div>
-					<div class="vidlegend">
-						<h2>Rutina de cardio en casa</h2>
-						<p>Perfecto para quienes buscan un entrenamiento cardiovascular intenso, pero fácil de seguir en casa, este vídeo guía a los espectadores a través de una serie de ejercicios que no requieren equipo.</p>
-					</div>
-				</div>
-				<div class="video_box">
-					<div class="responsiveiframe"> 
-						<iframe src="https://www.youtube.com/embed/qXr7xHZUxvY"></iframe>
-					</div>
-					<div class="vidlegend">
-						<h2>Ejercicios de pilates para fortalecer el core</h2>
-						<p>Este vídeo se enfoca en fortalecer el core utilizando técnicas de pilates, ideal para mejorar la postura y la flexibilidad, así como para fortalecer los músculos abdominales.</p>
-					</div>
-				</div>
-				<div class="video_box">
-					<div class="responsiveiframe"> 
-						<iframe src="https://www.youtube.com/embed/mT8MVyEopgs"></iframe>
-					</div>
-					<div class="vidlegend">
-						<h2>Entrenamiento de fuerza sin pesas</h2>
-						<p>Una excelente opción para quienes no tienen acceso a un gimnasio, este vídeo demuestra cómo realizar un entrenamiento de fuerza efectivo utilizando solo el peso corporal.</p>
-					</div>
-				</div>
-				<div class="video_box">
-					<div class="responsiveiframe"> 
-						<iframe src="https://www.youtube.com/embed/ZToicYcHIOU"></iframe>
-					</div>
-					<div class="vidlegend">
-						<h2>Mindfulness y meditación para principiantes</h2>
-						<p>Este vídeo proporciona una introducción suave a la práctica de la meditación y el mindfulness, enseñando técnicas básicas para mejorar la salud mental y el bienestar.</p>
-					</div>
-				</div>
-				<div class="video_box">
-					<div class="responsiveiframe"> 
-						<iframe src="https://www.youtube.com/embed/2L2lnxIcNmo"></iframe>
-					</div>
-					<div class="vidlegend">
-						<h2>Rutina de estiramientos para mejorar la flexibilidad</h2>
-						<p>Ideal para relajar los músculos y mejorar la flexibilidad general, este vídeo guía a los espectadores a través de una serie de estiramientos que se pueden realizar en cualquier lugar.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</main>
-	<footer class="back_verde">
-		<div id="pie">
-		  <div class="esquina_izquierda">
-			<img
-			  src="img/logoVital360-n.svg"
-			  alt="Logo"
-			  class="logo"
-			/>
-			<p>2023-2024 | Jose Ramos Masip</p>
-		  </div>
-		  <div class="esquina_derecha">
-			<ul>
-			  <li class="logos">
-				<a class="rs" href="#">
-				  <img src="img/twitter.svg" alt="Red social X" />
-				</a>
-			  </li>
-			  <li class="logos">
-				<a class="rs" href="#">
-				  <img src="img/instagram.svg" alt="Instagram" />
-				</a>
-			  </li>
-			  <li class="logos">
-				<a class="rs" href="#">
-				  <img src="img/youtube.svg" alt="YouTube" />
-				</a>
-			  </li>
-			</ul>
-			<ul>
-			  <li class="li-link privacidad">
-				<a class="elin" href="#"> Política de privacidad </a>
-			  </li>
-			  <li class="li-link cookies">
-				<a class="elin" href="#"> Política de <em>cookies</em> </a>
-			  </li>
-			  <li class="li-link aviso">
-				<a class="elin" href="#"> Aviso legal </a>
-			  </li>
-			</ul>
-		  </div>
-		</div>
-	  </footer>
-</body>
+    <header>
+      <nav class="nav">
+        <a href="index.html"
+          ><img src="img/logoVital360.svg" alt="Logotipo vital360" class="logo"
+        /></a>
+        <ul class="text_align_right">
+          <li class="l1"><a class="anav" href="blog.html">BLOG</a></li>
+          <li class="l2"><a class="anav" href="videos.html">VÍDEOS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="cuerpo">
+        <h1>Vídeos de ejercicio y bienestar</h1>
+        <div class="vid">
+          <div class="video_div">
+            <div class="responsiveiframe">
+              <iframe src="https://www.youtube.com/embed/VaoV1PrYft4"></iframe>
+            </div>
+            <div class="video_info">
+              <h2>Yoga para principiantes</h2>
+              <p>
+                Este vídeo es una introducción ideal al yoga para principiantes.
+                Ofrece una rutina suave y accesible para empezar a explorar los
+                beneficios de esta práctica milenaria.
+              </p>
+            </div>
+          </div>
+          <div class="video_div">
+            <div class="responsiveiframe">
+              <iframe src="https://www.youtube.com/embed/ksi-c8YgClY"></iframe>
+            </div>
+            <div class="video_info">
+              <h2>Rutina de cardio en casa</h2>
+              <p>
+                Perfecto para quienes buscan un entrenamiento cardiovascular
+                intenso, pero fácil de seguir en casa, este vídeo guía a los
+                espectadores a través de una serie de ejercicios que no
+                requieren equipo.
+              </p>
+            </div>
+          </div>
+          <div class="video_div">
+            <div class="responsiveiframe">
+              <iframe src="https://www.youtube.com/embed/qXr7xHZUxvY"></iframe>
+            </div>
+            <div class="video_info">
+              <h2>Ejercicios de pilates para fortalecer el core</h2>
+              <p>
+                Este vídeo se enfoca en fortalecer el core utilizando técnicas
+                de pilates, ideal para mejorar la postura y la flexibilidad, así
+                como para fortalecer los músculos abdominales.
+              </p>
+            </div>
+          </div>
+          <div class="video_div">
+            <div class="responsiveiframe">
+              <iframe src="https://www.youtube.com/embed/mT8MVyEopgs"></iframe>
+            </div>
+            <div class="video_info">
+              <h2>Entrenamiento de fuerza sin pesas</h2>
+              <p>
+                Una excelente opción para quienes no tienen acceso a un
+                gimnasio, este vídeo demuestra cómo realizar un entrenamiento de
+                fuerza efectivo utilizando solo el peso corporal.
+              </p>
+            </div>
+          </div>
+          <div class="video_div">
+            <div class="responsiveiframe">
+              <iframe src="https://www.youtube.com/embed/ZToicYcHIOU"></iframe>
+            </div>
+            <div class="video_info">
+              <h2><i>Mindfulness</i> y meditación para principiantes</h2>
+              <p>
+                Este vídeo proporciona una introducción suave a la práctica de
+                la meditación y el mindfulness, enseñando técnicas básicas para
+                mejorar la salud mental y el bienestar.
+              </p>
+            </div>
+          </div>
+          <div class="video_div">
+            <div class="responsiveiframe">
+              <iframe src="https://www.youtube.com/embed/2L2lnxIcNmo"></iframe>
+            </div>
+            <div class="video_info">
+              <h2>Rutina de estiramientos para mejorar la flexibilidad</h2>
+              <p>
+                Ideal para relajar los músculos y mejorar la flexibilidad
+                general, este vídeo guía a los espectadores a través de una
+                serie de estiramientos que se pueden realizar en cualquier
+                lugar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="back_verde">
+      <div id="pie">
+        <div class="esquina_izquierda">
+          <img src="img/logoVital360-n.svg" alt="Logo" class="logo" />
+          <p>2023-2024 | Jose Ramos Masip</p>
+        </div>
+        <div class="esquina_derecha">
+          <ul>
+            <li class="logos">
+              <a class="rs" href="#">
+                <img src="img/twitter.svg" alt="Red social X" />
+              </a>
+            </li>
+            <li class="logos">
+              <a class="rs" href="#">
+                <img src="img/instagram.svg" alt="Instagram" />
+              </a>
+            </li>
+            <li class="logos">
+              <a class="rs" href="#">
+                <img src="img/youtube.svg" alt="YouTube" />
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li class="li-link privacidad">
+              <a class="elin" href="#"> Política de privacidad </a>
+            </li>
+            <li class="li-link cookies">
+              <a class="elin" href="#"> Política de <em>cookies</em> </a>
+            </li>
+            <li class="li-link aviso">
+              <a class="elin" href="#"> Aviso legal </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
