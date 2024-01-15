@@ -46,10 +46,11 @@ ul {
 h1,
 h2 {
   font-family: "Noto Serif";
+  font-weight: 400; /* Regular */
+  font-size: 1.5rem;
 }
 button {
   color: #fff;
-  font-weight: bold;
 }
 /* //////////////////// */
 /* 				 HEADER */
@@ -222,6 +223,7 @@ legend {
   text-align: right;
 }
 
+
 /**
  * 
  * CSS styles for different screen sizes (PC, Tablet, Phone).
@@ -242,6 +244,10 @@ legend {
 /* PC */
 
 @media (min-width: 1100px) {
+  .formulario h2{
+    font-size: 3rem;
+    margin: 0;
+  }
   .cabecera {
     padding: 6rem 25rem 6rem 9.5rem;
   }
@@ -296,6 +302,9 @@ legend {
 /* Tablet */
 
 @media (max-width: 1100px) {
+  .formulario h2{
+    font-size: 2rem;
+  }
   h1{
     margin-left: 2rem;
   }
@@ -351,6 +360,11 @@ legend {
 @media (max-width: 500px) {
   h1{
     margin-left: 1rem;
+  }
+  .formulario h2{
+    font-size: 2rem;
+    margin: 0;
+
   }
   .apartados {
     padding: 3.75rem 1.25rem 1.875rem;
@@ -477,7 +491,7 @@ legend {
   font-size: 0.8rem;
   padding: 0 1.25rem 1.25rem;
 }
-.responsiveiframe {
+.div_youtube {
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
@@ -585,7 +599,7 @@ iframe {
   left: 1%;
   color: rgb(255, 255, 255);
   padding: 0.4rem;
-  border-radius: 6px;
+  border-radius: 2px;
 }
 .derechos_autor {
   position: absolute;
@@ -653,7 +667,7 @@ a.no_dec2:hover {
                           entrada.html
 ############################################################################ */@media (min-width: 1100px) {
   .entrada_div {
-    padding: 0.6rem 9.4rem 4.4rem;
+    padding: 0.6rem 15rem 4.4rem;
   }
   .entrada1 {
     display: grid;
@@ -668,16 +682,11 @@ a.no_dec2:hover {
   .bigger {
     font-size: 1.2rem;
   }
-  .adds {
-    display: grid;
+  .grid_artic {
     grid-template-columns: 1fr;
-    justify-content: left;
-    grid-gap: 4rem;
-    height: auto;
+  
   }
-  .cat {
-    font-size:0.7rem;
-  }
+ 
 }
 @media (max-width: 1100px) and (min-width: 500px) {
   .entrada_div {
@@ -690,16 +699,11 @@ a.no_dec2:hover {
     grid-gap: 4rem;
     height: auto;
   }
-  .adds {
-    display: grid;
+  .grid_artic {
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: left;
-    grid-gap: 4rem;
-    height: auto;
+
   }
-  .cat {
-    font-size: 0.7;
-  }
+ 
   ol {
     margin-left: -1rem;
   }
@@ -708,6 +712,7 @@ a.no_dec2:hover {
     position: relative;
     right: 2.5rem;
   }
+
 }
 @media (max-width: 500px) {
   .entrada_div {
@@ -720,16 +725,10 @@ a.no_dec2:hover {
     grid-gap: 4rem;
     height: auto;
   }
-  .adds {
-    display: grid;
+  .grid_artic {
     grid-template-columns: 1fr;
-    justify-content: left;
-    grid-gap: 4rem;
-    height: auto;
   }
-  .cat {
-    font-size: 0.8rem;
-  }
+  
   ol {
     margin-left: -1rem;
   }
@@ -738,6 +737,13 @@ a.no_dec2:hover {
     position: relative;
     right: 2.5rem;
   }
+ 
+}
+.grid_artic {
+  display: grid;
+  justify-content: left;
+  grid-gap: 1rem;
+  height: auto;
 }
 .men {
   font-size: 0.7rem;
@@ -764,9 +770,9 @@ a.no_dec2:hover {
 .leg2 {
   padding: 0 0.5rem 0.5rem;
 }
-.imag {
+.img_info_gris {
   color: rgb(158, 157, 171);
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
 .smaller {
@@ -794,32 +800,36 @@ a.no_dec2:hover {
 blockquote {
   border-left: 0.25rem solid rgb(191, 12, 240);
 }
-h2.nopad {
+h2.artic_recien {
   margin: 0;
 }
-h1.nopad2 {
+h1.entrada_titulos {
+  margin: 0.5rem 0 0 0;
+  font-size: 2rem;
+}
+h2.entrada_titulos {
   margin-top: 0.5rem;
   margin-bottom: 0;
 }
-h2.nopad2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0;
-}
-.cate {
+.categorias {
   margin-bottom: 0.5rem;
 }
 .etiquetacat {
   line-height: 1.5rem;
   margin-top: 0;
 }
-.cat {
+.categoria {
   color: rgb(0, 59, 74);
   background-color: rgb(255, 255, 255);
   border: solid 1px rgb(0, 59, 74);
   text-decoration: none;
-  margin-right: 0.5rem;
+  margin: 0.3rem 0.3rem 0.3rem 0;
+  padding: 0.1rem 0.3rem;
+
+  font-size: 0.9rem;
+  display: inline-block; /* Agregar esta línea */
 }
-.cat:hover {
+.categoria:hover {
   color: rgb(255, 255, 255);
   background-color: rgb(191, 12, 240);
 }
