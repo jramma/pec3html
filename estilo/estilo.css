@@ -19,7 +19,7 @@ html {
 .color_verde {
   color: rgb(0, 59, 74);
 }
-.back_verde{
+.back_verde {
   background-color: rgb(0, 59, 74);
 }
 strong {
@@ -92,7 +92,7 @@ header {
 .text_align_right {
   text-align: right;
 }
-.text_align_left{
+.text_align_left {
   text-align: left;
 }
 .width_100 {
@@ -222,13 +222,13 @@ figcaption {
   font-size: 0.4rem;
   text-align: right;
 }
-figure{
+figure {
   margin: 0;
 }
-.apartados p{
+.apartados p {
   font-weight: 300;
 }
-.apartados h2{
+.apartados h2 {
   font-weight: 600;
 }
 
@@ -252,7 +252,7 @@ figure{
 /* PC */
 
 @media (min-width: 1100px) {
-  .formulario h2{
+  .formulario h2 {
     font-size: 3rem;
     margin: 0;
   }
@@ -305,16 +305,15 @@ figure{
     align-items: center;
     padding-bottom: 3rem;
   }
- 
 }
 
 /* Tablet */
 
 @media (max-width: 1100px) {
-  .formulario h2{
+  .formulario h2 {
     font-size: 2rem;
   }
- 
+
   .apartados {
     padding: 3.75rem 1.25rem 1.875rem;
   }
@@ -359,19 +358,17 @@ figure{
     align-items: center;
     padding-bottom: 3rem;
   }
- 
 }
 
 /* Phone */
 
 @media (max-width: 500px) {
-  h1{
+  h1 {
     margin-left: 1rem;
   }
-  .formulario h2{
+  .formulario h2 {
     font-size: 2rem;
     margin: 0;
-
   }
   .apartados {
     padding: 3.75rem 1.25rem 1.875rem;
@@ -398,7 +395,7 @@ figure{
   .btn {
     font-size: 1rem;
   }
- 
+
   .grid1 {
     display: grid;
     grid-template-columns: 1fr;
@@ -413,7 +410,7 @@ figure{
     align-items: center;
     margin-bottom: 10rem;
   }
- 
+
   .imagen_izquierda {
     text-align: right;
     order: 1;
@@ -427,27 +424,29 @@ figure{
   .order_text {
     order: 2;
   }
-
 }
 
 /* //////////////////// */
 /* 	VIDEO & BLOG	    */
 /* //////////////////// */
+.video_main {
+  margin-bottom: 6rem;
+}
 @media (min-width: 1100px) {
   .cuerpo {
-    padding: 0.625rem 2.5rem 4.375rem;
+    padding: 0.7rem 2.5rem 7rem;
   }
 
   @media (max-width: 1100px) and (min-width: 500px) {
     .cuerpo {
-      padding: 1rem 1.25rem 4.375rem;
+      padding: 1rem 1.25rem 7rem;
       margin-left: 0.5rem;
     }
   }
 
   @media (max-width: 500px) {
     .cuerpo {
-      padding: 0.625rem 1.25rem 4.375rem;
+      padding: 0.625rem 1.25rem 7rem;
     }
   }
 }
@@ -489,7 +488,6 @@ figure{
     height: auto;
     grid-gap: 4rem;
     margin: 1rem;
-
   }
 }
 .video_info {
@@ -504,7 +502,7 @@ figure{
   padding-bottom: 56.25%;
   position: relative;
 }
-.video_div{
+.video_div {
   background-color: #fff;
   border: 1px solid rgb(158, 157, 171);
 }
@@ -523,7 +521,7 @@ iframe {
   .blog1 {
     grid-column: span 2;
   }
-  h1{
+  h1 {
     font-size: 2rem;
   }
   .blog {
@@ -533,7 +531,7 @@ iframe {
     grid-gap: 4rem;
     margin-bottom: 2rem;
   }
- 
+
   .derechos_autor {
     font-size: 0.4rem;
   }
@@ -552,10 +550,10 @@ iframe {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: left;
-    grid-gap: 2rem; 
-    margin: 0 2rem 2rem 2rem; 
+    grid-gap: 2rem;
+    margin: 0 2rem 2rem 2rem;
   }
-  h1{
+  h1 {
     margin-left: 2rem;
     font-size: 2rem;
   }
@@ -581,7 +579,7 @@ iframe {
     grid-gap: 2.5rem;
     margin: 1rem;
   }
-  
+
   .derechos_autor {
     font-size: 0.9rem;
   }
@@ -679,7 +677,8 @@ a.no_dec2:hover {
 
 /* ############################################################################
                           entrada.html
-############################################################################ */@media (min-width: 1100px) {
+############################################################################ */
+@media (min-width: 1100px) {
   .entrada_div {
     padding: 0.6rem 15rem 4.4rem;
   }
@@ -698,9 +697,7 @@ a.no_dec2:hover {
   }
   .grid_artic {
     grid-template-columns: 1fr;
-  
   }
- 
 }
 @media (max-width: 1100px) and (min-width: 500px) {
   .entrada_div {
@@ -715,9 +712,8 @@ a.no_dec2:hover {
   }
   .grid_artic {
     grid-template-columns: 1fr 1fr 1fr;
-
   }
- 
+
   ol {
     margin-left: -1rem;
   }
@@ -726,7 +722,6 @@ a.no_dec2:hover {
     position: relative;
     right: 2.5rem;
   }
-
 }
 @media (max-width: 500px) {
   .entrada_div {
@@ -742,7 +737,7 @@ a.no_dec2:hover {
   .grid_artic {
     grid-template-columns: 1fr;
   }
-  
+
   ol {
     margin-left: -1rem;
   }
@@ -751,7 +746,6 @@ a.no_dec2:hover {
     position: relative;
     right: 2.5rem;
   }
- 
 }
 .grid_artic {
   display: grid;
